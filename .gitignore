@@ -41,3 +41,10 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+.buildpath
+.project
+.settings/
+.idea/
+data/cache/
+data/log/
+data/upload/
