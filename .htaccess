@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ping/?(.*)$ /wifi/index.php?act=index&op=ping
+RewriteRule ^login/?(.*)$ /wifi/index.php?act=index&op=login
+RewriteRule ^auth/?(.*)$ /wifi/index.php?act=index&op=auth
+RewriteRule ^portal/?(.*)$ /wifi/index.php?act=index&op=portal
+#RewriteRule ^(.*)$ index.php?$1 [L]
