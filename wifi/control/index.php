@@ -171,6 +171,7 @@ class indexControl {
         $condition  = array('gw_account'=>$gw_id);
         $model_gw   = Model('wifi_gw');
         $rs = $model_gw->getGwList($condition);
+        
         if (!$rs){
             echo '您的路由还没登记，请联系管理员登记！';
             exit;
@@ -216,11 +217,17 @@ class indexControl {
             'ol_mac' => $mac,
             'gw_address' => $gw_address
         );
+        Tpl::output('seo_title', '微购WIFI上网认证');
         Tpl::output('data', $data);
         Tpl::showpage('login');
     }
     
     public function portalOp(){
         var_export($_GET);
+    }
+    
+    public function regOp(){
+
+        echo 111234234234234234232;exit;
     }
 }
